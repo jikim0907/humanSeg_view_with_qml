@@ -1,3 +1,0 @@
-/home/jikim/PersonMask_TFLite/build/CMakeFiles/person_mask.dir
-/home/jikim/PersonMask_TFLite/build/CMakeFiles/edit_cache.dir
-/home/jikim/PersonMask_TFLite/build/CMakeFiles/rebuild_cache.dir
