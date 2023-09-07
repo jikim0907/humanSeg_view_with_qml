@@ -51,10 +51,11 @@ cv::Mat Viewer::drawContours_Human(cv::Mat img_color){
     findContours(img_binary, contours, RETR_EXTERNAL, CHAIN_APPROX_SIMPLE);
     cv::Mat img_png(img_color.rows,img_color.cols,CV_8UC4,Scalar(0,0,0,0)); //4channel
 
-    drawContours(img_png, contours, 0, Scalar(0,165,0,255),60);
-    drawContours(img_png, contours, 0, Scalar(140,0,0,255),40);
-    drawContours(img_png, contours, 0, Scalar(0,0,0,255),20);
-    drawContours(img_png, contours, 0, Scalar(0,165,255,255),-1);
+    drawContours(img_png, contours, 0, Scalar(255,153,255,255),60);
+    drawContours(img_png, contours, 0, Scalar(153,255,204,255),40);
+    drawContours(img_png, contours, 0, Scalar(255,204,102,255),20);
+    drawContours(img_png, contours, 0, Scalar(255,153,204,255),-1);
+
 
     return img_png;
 }
