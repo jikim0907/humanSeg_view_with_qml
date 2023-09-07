@@ -17,7 +17,7 @@ ApplicationWindow {
 
         MediaPlayer {
             id: mediaPlayer
-            source: "file:///home/jikim/untitled2/data/aurora_540.mp4"
+            source: "qrc:///data/aurora_540.mp4"
             autoPlay: true // 자동 재생 설정
 
 

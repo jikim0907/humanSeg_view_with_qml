@@ -1,5 +1,8 @@
 <RCC>
     <qresource prefix="/">
         <file>main.qml</file>
+        <file>data/models/mobilenet_v3_segm_256.tflite</file>
+        <file>data/aurora_540.mp4</file>
+        <file>data/test.mp4</file>
     </qresource>
 </RCC>

@@ -1,0 +1,9 @@
+<?xml version="1.0"?>
+<RCC>
+    <qresource prefix="/">
+        <file alias="main.qml">../main.qml</file>
+        <file alias="data/models/mobilenet_v3_segm_256.tflite">../data/models/mobilenet_v3_segm_256.tflite</file>
+        <file alias="data/aurora_540.mp4">../data/aurora_540.mp4</file>
+        <file alias="data/test.mp4">../data/test.mp4</file>
+    </qresource>
+</RCC>

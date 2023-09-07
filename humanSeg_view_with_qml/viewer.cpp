@@ -46,12 +46,16 @@ cv::Mat Viewer::drawContours_Human(cv::Mat img_color){
 
     morphologyEx(img_binary, img_binary, MORPH_CLOSE, kernel);
     cv::bitwise_not(img_binary, img_binary);
-
+    cv::GaussianBlur(img_binary,img_binary,Size(25,25),0,0);
     vector<vector<Point>> contours;
     findContours(img_binary, contours, RETR_EXTERNAL, CHAIN_APPROX_SIMPLE);
     cv::Mat img_png(img_color.rows,img_color.cols,CV_8UC4,Scalar(0,0,0,0)); //4channel
+
+    drawContours(img_png, contours, 0, Scalar(0,165,0,255),60);
+    drawContours(img_png, contours, 0, Scalar(140,0,0,255),40);
+    drawContours(img_png, contours, 0, Scalar(0,0,0,255),20);
     drawContours(img_png, contours, 0, Scalar(0,165,255,255),-1);
-    drawContours(img_png, contours, 0, Scalar(0,0,0,255),3);
+
     return img_png;
 }
 
