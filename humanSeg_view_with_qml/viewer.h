@@ -6,7 +6,7 @@
 #include <QImage>
 #include <QObject>
 #include <cmath>
-#include <QDebug>
+#include <iostream>
 
 #include "opencv2/opencv.hpp"
 #include "predictor.h"
@@ -26,7 +26,6 @@ public:
     QImage cvMatToQImage(const cv::Mat& cvImage);
     QImage contour_img;
     cv::Mat img, masked_img;
-    int start_time, end_time;
 
     Predictor *mPredictor;
     Camera *mCam;

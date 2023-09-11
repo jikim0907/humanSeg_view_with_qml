@@ -27,7 +27,7 @@ else: unix:!android: target.path = /opt/$${TARGET}/bin
 
 
 INCLUDEPATH += /usr/local/include/opencv4
-LIBS += -lopencv_core -lopencv_imgproc -lopencv_highgui -lopencv_imgcodecs -lopencv_videoio -lopencv_objdetect
+LIBS += -lopencv_core -lopencv_imgproc -lopencv_highgui -lopencv_imgcodecs -lopencv_videoio
 
 INCLUDEPATH += $$(HOME)/dependencies/tensorflow/
 INCLUDEPATH += $$(HOME)/dependencies/tensorflow/tensorflow/lite/tools/make/downloads/absl
